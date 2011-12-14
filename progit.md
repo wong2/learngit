@@ -1,5 +1,36 @@
 读progit的过程中记下一下东西
 
+###基础：
+* git status
+* git add
+* 暂存状态(在下一次commit时提交的)
+* 修改后的文件也要用git add加到暂存区
+* 要养成一开始就设置好.gitignore文件的习惯
+* git diff 查看当前文件与暂存区快照间的差异
+* git diff --cached 查看已经暂存起来的变化
+* git commit
+* git commit -a 把所有已经跟踪过的文件暂存起来一并提交，从而跳过git add步骤 
+* 从git中移除某个文件：git rm [-f] 同时会从文件系统中删除之
+* git rm --cached xxxx 可将某个文件解除git管理
+* git mv 进行文件重命名
+* git log 查看提交历史，图形化工具比如gitk, gitg
+* git commit --amend 用当前暂存区的文件替换最后一次提交
+* 撤销对某文件的修改： git checkout -- xxx
+
+###远程仓库
+* git remote [-v]
+* git remote add remote-name url
+* git fetch remote-name, fetch只是把数据拉取到本地，不会自动合并
+* git push remote-name branch-name
+* git remote show xxx
+* git remote rm xx
+
+###标签
+* git tag，列出标签
+* git tag -a tagname
+* git show tagname
+* git tag xxxx: 轻量级标签
+
 ###协议:
 * ssh: 
     * 如果需要安全的write access，用ssh比较合适
