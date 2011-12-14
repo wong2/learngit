@@ -1,6 +1,0 @@
-[submodule "node-snsclient"]
-	path = node-snsclient
-	url = git://github.com/btspoony/node-snsclient.git
-[submodule "snsclient"]
-	path = snsclient
-	url = git://github.com/btspoony/node-snsclient.git
